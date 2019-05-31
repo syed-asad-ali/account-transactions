@@ -93,7 +93,7 @@ The REST API to the example app is described below.
 ## Get list of Account objects with Account Transactions associated (if any) as well
 ### Request
 
-`GET /accounts/`
+`GET /accounts/{accountId}/transactions`
 
     curl -i -H 'Accept: application/json' http://localhost:8090/account-helper/accounts/2/transactions
 
