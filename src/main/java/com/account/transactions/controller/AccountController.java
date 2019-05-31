@@ -84,7 +84,7 @@ public class AccountController {
      * @return the serialized object
      */
     @PostMapping("/accounts")
-    public Account createPost(@Valid @RequestBody Account post) {
+    public Account createAccount(@Valid @RequestBody Account post) {
         return accountRepository.save(post);
     }
 }
