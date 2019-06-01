@@ -65,7 +65,7 @@ public class Account {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "##########.##")
     private BigDecimal openingBalance;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "account")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "account")
     private Set<AccountTransaction> accountTransactions;
 
     @Override
